@@ -23,7 +23,7 @@ this set of numbers?.<br/> Remember the simplest way is not always the correct w
 <label for="data">Number to be validated:</label>
 <br/>
 <input type="text" name="data"
-value="<?php if(isset($data)) echo htmlentities($data); ?>" size="30"/></p><br/>
+value="<?php if(isset($data)) echo htmlentities(strip_tags($data)); ?>" size="30"/><br/><br/>
 <input type="submit" name="submit" value="Submit" />
 <br/><br/><p>Regex pattern used:<br/><?php echo htmlentities('/^123-939-7878$/')?></p>
 </form>

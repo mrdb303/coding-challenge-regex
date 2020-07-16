@@ -103,18 +103,25 @@ line-height: 1.3em;
 color: white;
 }
 
-button {
-background-color: #0f2e3f;
-border: 1px solid #465055;
+a.btn {
+font-weight: bold;
+line-height: 1.3em;
+color: white;
 font-family: 'Volkhov', serif;
 font-size: 1.25em;
-color: white;
-font-weight: bold;
+background-color: #0f2e3f;
+border: 1px solid #465055;
 padding: 3px 8px 3px 8px;
 border-radius: 6px;
 display: block;
 margin-top: 10px;
 margin-bottom: 5px;
+text-decoration: none;
+width: 3.8em;
+}
+
+a.btn:hover {
+background-color: #071e2b;
 }
 
 section {
@@ -123,7 +130,7 @@ margin-bottom: 60px;
 }
 
 #result{
-margin-top: 20px;
+margin-top: 10px;
 margin-bottom: 35px;
 background-color: #0f2e3f;
 padding-top: 20px;

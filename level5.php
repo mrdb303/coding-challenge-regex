@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <label for="data">Number to be validated:</label>
 <br/>
 <input type="text" name="data"
-value="<?php if(isset($data)) echo htmlentities($data); ?>" size="30"/></p><br/>
+value="<?php if(isset($data)) echo htmlentities(strip_tags($data)); ?>" size="30"/><br/><br/>
 <input type="submit" name="submit" value="Submit" />
 <br/><br/><p>Regex pattern used:<br/><?php echo htmlentities('/^(\(?)(\d){3}(\)|-|\)-|\)\()(\d){3}(\)|-|\)-|\)\(|-\(|\()(\d){4}(\)?)$/')?></p>
 </form>
